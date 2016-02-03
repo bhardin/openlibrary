@@ -5,8 +5,8 @@ require "openlibrary/version"
 Gem::Specification.new do |s|
   s.name = "openlibrary"
   s.version = Openlibrary::VERSION
-  s.authors = ["Jay Fajardo"]
-  s.email = ["jmrfajardo@gmail.com"]
+  s.authors = ["Jay Fajardo", "Brett Hardin"]
+  s.email = ["jmrfajardo@gmail.com", "hardin.brett@gmail.com"]
   s.homepage = "http://www.proudcloud.net"
   s.summary = %q{Ruby Interface for the Openlibrary.org API}
   s.description = %q{Openlibrary.org API Interface}
@@ -20,9 +20,10 @@ Gem::Specification.new do |s|
 
   s.add_development_dependency 'rspec', '~> 2.13'
   s.add_development_dependency 'webmock', '~> 1.11'
+  s.add_development_dependency 'rake', '~> 10.4'
 
   s.add_runtime_dependency 'json', '>= 1.7.7'
   s.add_runtime_dependency 'rest-client', '~> 1.6'
   s.add_runtime_dependency 'hashie', '~> 2.0.2'
-  s.add_runtime_dependency 'activesupport', '~> 4'
+  s.add_runtime_dependency 'activesupport', '~> 4.0'
 end
